@@ -218,6 +218,7 @@ width: 75%;
     display: flex;
     flex-direction: column;
     padding: 100px;
+    padding-bottom: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -275,6 +276,35 @@ width: 75%;
     margin-top: 10px;
 }
 
+.footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__social h1 {
+    padding-top: 20px;
+    margin: 0;
+}
+
+
+.footer__social__nav__ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: white;
+    color: black;
+    margin: 10;
+    padding: 0;
+}
+
+.footer__social__nav__ul li a {
+    color: black;
+    font-size: 40pt;
+    padding: 10px;
+    padding-top: 0;
+}
+
 /*SUBCLASES------------------------------------------------*/
 
 .top__navbar__nav__cat il:hover {
@@ -315,8 +345,9 @@ width: 75%;
 }
 
 input:focus {
-    background: rgb(216, 216, 216);
-    color: black;
+    background: black;
+    color: white;
+    outline: none;
 }
 
 

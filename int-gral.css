@@ -65,5 +65,14 @@ a {
     color: black;
 }
 
+input {
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    background: white;
+    color: black;
+}
 
 
