@@ -308,7 +308,7 @@ width: 75%;
 /*SUBCLASES------------------------------------------------*/
 
 .top__navbar__nav__cat il:hover {
-    background: rgb(38, 38, 38);
+    color: rgb(191, 191, 191);
     cursor: pointer;
 }
 
@@ -350,5 +350,8 @@ input:focus {
     outline: none;
 }
 
+.footer__social__nav__ul li a:hover {
+    color: rgb(44, 44, 44);
+}
 
 
