@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="int-esp.css">
-    <link rel="stylesheet" href="int-gral.css">
+    <link rel="stylesheet" href="index-main.css">
+    <link rel="stylesheet" href="index-esp.css">
     <link rel="shortcut icon" href="./img/isologo2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Thuishaven</title>
@@ -22,18 +22,19 @@
                     </a>
                 </div>
                 <nav class="top__navbar__nav">
+                    <a href="" class="toggle">MENU</a>
                     <ul class="top__navbar__nav__cat">
-                        <il>Next events</il>
-                        <il>Merch</il>
-                        <il>Gallery</il>
-                        <il>Contact us</il>
+                       <a href="#nextevents"><il>Next events</il></a>
+                        <a href="#merch"><il>Merch</il></a>
+                        <a href="#gallery"><il>Gallery</il></a>
+                        <a href="#contact"><il>Contact us</il></a>
                     </ul>
                 </nav>
-            </div>
-            <div class="top__my-account">
-                <a href="">
-                    <button>MY ACCOUNT</button>
-                </a>
+                <div class="top__my-account">
+                    <a href="https://login-integrador-vercel.vercel.app/">
+                        <button>MY ACCOUNT</button>
+                    </a>
+                </div>
             </div>
         </header>
         <div class="portada">
@@ -43,7 +44,7 @@
             <div class="next-events__title">
                 <h1>NEXT EVENTS</h1>
             </div>
-            <article class="next-events__cards">
+            <article class="next-events__cards" id="nextevents">
                 <a href="">
                     <div class="next-events__cards__card">
                         <div class="next-events__cards__card__details">
@@ -80,7 +81,7 @@
         </section>
         <section class="merch">
             <h1>MERCH</h1>
-            <div class="merch__clothes">
+            <div class="merch__clothes" id="merch">
                 <div class="merch__clothes__card">
                     <h2>T-SHIRTS</h2>
                     <img src="./img/Thuishaven-Tshirt-wit-500x500.jpg" alt="">
@@ -101,7 +102,7 @@
         <!-- AGREGAR LINK DE FOTOS -->
         <div class="gallery">
             <h1>GALLERY</h1>
-            <div class="gallery__container">
+            <div class="gallery__container" id="gallery">
                 <section class="gallery__container__grid">
                         <img src="./img/gallery1.png" alt="">
                         <img src="./img/gallery2.png" alt="">
@@ -115,7 +116,7 @@
                 </section>
             </div>
         </div>
-        <div class="subscribe">
+        <div class="subscribe" id="contact">
             <section class="subscribe__section">
                 <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
                 <p>To find out about the next dates</p>
@@ -147,5 +148,16 @@
             </footer>
         </div>
     </div>
+    <script>
+        const toggle = document.querySelector('.toggle');
+        console.log(toggle);
+        const navUl = document.querySelector('nav.top__navbar__nav ul');
+
+        console.log(navUl);
+
+        toggle.addEventListener('click', () => {
+            navUl.classList.toggle('open')
+    });
+    </script>
 </body>
 </html>

@@ -4,7 +4,9 @@
 
 .top__navbar {
     display: flex;
+    justify-content: space-between;
     margin-left: 20px;
+    width: 100%;
 }
 
 .top__navbar__nav__cat {
@@ -12,6 +14,9 @@
     padding: 0;
 }
 
+.toggle {
+    display: none;
+}
 
 .top__navbar__nav__cat il {
     padding: 10px;
@@ -46,7 +51,12 @@
 
 /*NEXT EVENTS*/
 .next-events {
-width: 75%;
+    width: 75%;
+    margin: 100px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    color: white;   
 }
 
 .next-events__title {
@@ -354,4 +364,95 @@ input:focus {
     color: rgb(44, 44, 44);
 }
 
+/*MEDIA QUERY----------------------------------------------*/
 
+@media all and (max-width: 1000px){
+    .top__navbar__nav__cat {
+        flex-wrap: wrap;
+    }
+    .top__navbar__nav__cat li {
+        flex: 1 1 50%;
+    }
+}
+
+@media all and (max-width: 500px){
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+   .wrapper > *{
+        order: 999;
+    }
+    .top__logo {
+        margin-left: 0;
+    }
+    .top__navbar {
+        margin-left: 30;
+    }
+    .top__navbar__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top__navbar__nav ul {
+        display: none;
+    }
+    .top__navbar__nav ul.open {
+        display: flex;
+        flex-direction: column;
+    }
+    .toggle {
+        display: block;
+        color: white;
+    }
+    .top__navbar__nav li {
+        flex-basis: 100%;
+    }
+    .top__navbar__nav__cat {
+        order: 1;
+    }
+
+    .next-events {
+        margin-left: 15px;
+    }
+
+    .next-events__cards {
+        width: 450px;
+    }
+    .next-events__cards a {
+        width: 450px;
+    }
+    .next-events__cards__card {
+        width: 400px;
+    }
+    .next-events__cards__card__details {
+        width: 400px;
+    }
+    .next-events__cards__card__details h3 {
+        font-size: 15pt ;
+    }
+
+    .next-events__cards__card__details h1 {
+        font-size: 15pt ;
+    }
+
+    .merch__clothes{
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery__container__grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subscribe__section {
+        padding-bottom: 60px;
+    }
+    .subscribe__contact {
+        padding-top: 0;
+    }
+}
